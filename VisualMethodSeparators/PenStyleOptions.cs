@@ -12,7 +12,7 @@ namespace RomanPeshkov.VisualMethodSeparators
     {
         public PenStyleOptions()
         {
-            Color = Color.Red;
+            Color = Color.LightGray;
             PenDashStyle = DashStyle.Solid;
             Thickness = 1.0;
         }

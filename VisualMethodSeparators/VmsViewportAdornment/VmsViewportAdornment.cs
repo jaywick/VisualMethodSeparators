@@ -72,7 +72,8 @@ namespace RomanPeshkov.VisualMethodSeparators.VmsViewportAdornment
             {
                 var span = new SnapshotSpan(_view.TextSnapshot, Span.FromBounds(line.Start, line.End));
 
-                var a = CreateLine(0, line.Top, _view.ViewportWidth, line.Top, _pen);
+                var top = line.Top - line.TextHeight / 2;
+                var a = CreateLine(0, top, _view.ViewportWidth, top, _pen);
                 _layer.AddAdornment(span, null, a);    
             }
         }
